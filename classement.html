@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classements - Football Stats</title>
+    <link rel="icon" type="image/png" href="/img/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Football Stats</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="match-futur.html">Futurs Matchs</a></li>
+                <li><a href="classement.html">Classements</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher...">
+            <button id="search-btn">Rechercher</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <h2>Classements des Grands Championnats</h2>
+            <p>Voici les classements actuels des 5 grands championnats de football.</p>
+        </div>
+
+        <div class="standings">
+            <div id="premier-league" class="table-container"></div>
+            <div id="la-liga" class="table-container"></div>
+            <div id="serie-a" class="table-container"></div>
+            <div id="bundesliga" class="table-container"></div>
+            <div id="ligue-1" class="table-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Football Stats. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/searchClassement.js"></script>
+    <script src="js/fetchClassement.js"></script>
+</body>
+</html>

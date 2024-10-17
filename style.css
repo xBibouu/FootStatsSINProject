@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ffffff; 
+    color: #333;
+}
+
+header {
+    background-color: #4a90e2; 
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 3em; 
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px; 
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+h1 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e94e77; 
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.welcome {
+    margin: 20px 0;
+}
+
+.welcome h2 {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.separator {
+    width: 60%;
+    height: 2px;
+    background-color: #ddd; 
+    margin: 30px auto;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #e94e77;
+    color: #fff;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em; 
+}
+
+.button:hover {
+    background: #d73968; 
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #4a90e2; 
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#past-matches, #upcoming-matches, #standings {
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.match-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.match-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.8em; 
+    color: #4a90e2; 
+}
+
+#standings table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+#standings th, #standings td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#standings th {
+    background: #4a90e2;
+    color: #ffffff;
+    font-size: 1.2em; 
+}
+
+#standings tr:nth-child(even) {
+    background-color: #f7f7f7; 
+}
+
+.table-container {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.league-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+ .match-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.match-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+.match-teams {
+    font-weight: 700;
+}
+
+ /* css pour la search bar genre les searchClassement.js et searchMatch.js */
+
+.search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.img-home{
+    max-width: 50px;
+    margin-right: 15px;
+}
+
+.img-away{
+    max-width: 50px;
+    margin-left: 15px;
+
+}
